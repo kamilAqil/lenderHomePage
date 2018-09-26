@@ -16,29 +16,34 @@
 <body>
     <!-- main container -->
     <div class="container-fluid " id="mainContainer">
+        <!-- logo -->
+        <div class="col-sm-3 col-3 offset-sm-1 offset-1 " id="logoCol">
+            <!-- logoImage -->
+            <img src="./assets/logo_stuff/logo.png" id="logoImage" class="img-fluid" alt="">
+        </div>
         <!-- fixedTopNav -->
             <div class="row" id="fixedTopNav">
-                <div class="col-5 offset-5" id="navColFixedTop">
+                <div class="col-5 offset-4" id="navColFixedTop">
                     <!-- testNav -->
-                    <nav class="navbar navbar-expand-lg navbar-dark" id="darkNav">
+                    <nav class="navbar navbar-expand-lg navbar-dark testBorderWhite" id="darkNav">
                         <a class="navbar-brand" id="phoneNumber" href="#">888-377-1265</a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+                        <button class="navbar-toggler testBorderWhite" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
                             aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
+                            <span class="navbar-toggler-icon testBorderWhite"></span>
                         </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav nav-fill w-100" id="topNavLinkList">
-                                <li class="nav-item">
-                                    <a class="nav-link text-white navLink" href="#">Home <span class="sr-only">(current)</span></a>
+                        <div class="collapse navbar-collapse testBorderWhite" id="navbarNav">
+                            <ul class="navbar-nav nav-fill w-100 testBorderWhite" id="topNavLinkList">
+                                <li class="nav-item testBorderWhite">
+                                    <a class="nav-link text-white navLink testBorderWhite" href="#">Home <span class="sr-only">(current)</span></a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link  text-white navLink" href="#">About Us</a>
+                                <li class="nav-item testBorderWhite">
+                                    <a class="nav-link  text-white navLink testBorderWhite" href="#">About Us</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link  text-white navLink" href="#">Testimonials</a>
+                                <li class="nav-item testBorderWhite">
+                                    <a class="nav-link  text-white navLink testBorderWhite" href="#">Testimonials</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link  text-white navLink" href="#">Contact Us</a>
+                                <li class="nav-item testBorderWhite">
+                                    <a class="nav-link  text-white navLink testBorderWhite" href="#">Contact Us</a>
                                 </li>
                             </ul>
                         </div>
@@ -74,13 +79,8 @@
             </div>
             <!-- subNavRow -->
         <div class="row " id="subNavRow">
-            <!-- logo -->
-            <div class="col-sm-3 col-3 offset-sm-1 offset-1 " id="logoCol">
-                        <!-- logoImage -->
-                        <img src="./assets/logo_stuff/logo.png" id="logoImage" class="img-fluid" alt="">
-            </div>
             <!-- linksContainer -->
-            <div class="col-md-7 col-7 " id="linksContainerSubNav">
+            <div class="col-md-7 col-7 offset-4" id="linksContainerSubNav">
                 <!-- row of links -->
                 <div class="row " id="rowOfLinks">
                     <!-- linkONe -->
@@ -203,6 +203,7 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+        <script src="./assets/scroll.js"></script>
 </body>
 
 </html>
