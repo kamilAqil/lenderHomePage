@@ -90,6 +90,24 @@ body {
     height: 100%;
 }
 
+.headroom--pinned {
+    
+}
+.headroom--unpinned {
+    display: none;
+}
+
+.headroom {
+    will-change: transform;
+    transition: transform 2000ms linear;
+}
+.headroom--pinned {
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
+
 #logoCol{
     position: fixed;
     background-image: url("./logo_stuff/image_border.png");
@@ -138,6 +156,7 @@ body {
 #slideShowCol{
     position: relative;
     padding: 0;
+    margin-top: 85px;
 }
 
 .rowLinkCol{
@@ -148,6 +167,7 @@ body {
     white-space: nowrap;
     border: 2px solid black;
     border-radius: 5px;
+    padding: 1%;
 }
 
 #linksAndContentRow{
@@ -207,8 +227,36 @@ body {
     height: 30px;
 }
 
+@media all and (min-width : 993px){
+    .rowLinkCol{
+        padding: 0;
+        
+    }
+    #phoneNumber{
+        font-size: 2rem;
+    }
+}
 
-@media all and (max-width: 1177px) { 
+@media all and (min-width : 1178px){
+    .rowLinkCol{
+        padding: 2%;
+        
+    }
+}
+
+@media all and (min-width : 1700px){
+    .rowLinkCol{
+        padding: 2%;  
+    }
+    #fixedTopNav{
+        height: 90px;
+    }
+    #subNavRow{
+        margin-top: 80px;
+    }
+}
+
+@media all and (max-width: 1177px) and (min-width: 993px) { 
     html {
         font-size: 1.6rem;
     }
@@ -223,13 +271,16 @@ body {
 
  } 
 
-@media all and (max-width: 991px) { 
+ 
+@media all and (max-width: 992px) { 
     html {
         font-size: .9rem;
     }
     .rowLinkCol{
+        height: 40px;
         
     }
+
  } 
 @media all and (max-width: 768px) { 
      html {
@@ -238,11 +289,29 @@ body {
     .navLink{
         font-size: .8rem;
     }
+    .rowLinkCol{
+        height: 35px;
+    }
  } 
 @media all and (max-width: 575px) {
     html {
         font-size: .7rem;
     }
+    .rowLinkCol{
+        height: 30px;
+        border: 1px solid black;
+    }
     
 }
- 
+
+@media all and (max-width: 460px) {
+    html {
+        font-size: .7rem;
+    }
+    .rowLinkCol{
+        height: 30px;
+    }
+    #logoCol{
+        height: 75px;    
+    }
+}
