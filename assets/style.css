@@ -24,12 +24,14 @@ body {
 }
 
 #fixedTopNav{
-    height: 50px;
+    height: 60px;
+    width: 100%;
+    position: fixed;
     background: url(./lighterBackground.jpg) repeat-x left top ; 
     background-size: contain;
     color: white;
-    position: relative;
     margin-bottom: auto;
+    z-index: 2;
 }
 
 .navLink{
@@ -37,7 +39,7 @@ body {
    background-size: 100%;
    margin-right: 5px; */
    font-family:  Arial, Helvetica, sans-serif;
-   font-size: 12px;
+   font-size: 1.2vw;
    text-transform: uppercase;
    white-space: nowrap;
 }
@@ -78,24 +80,40 @@ body {
 }
 
 #subNavRow{
-    height: 10%;
-    margin: 0;
+    position: fixed;
+    margin-top: 55px;
+    z-index: 1;
+    width: 100%;
 }
 
 #subNavLinksRow{
     height: 100%;
 }
 
+
+.headroom {
+    will-change: transform;
+    transition: transform 200ms linear;
+}
+.headroom--pinned {
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    transform: translateY(-100%);
+     margin-top: 0px;
+}
+
 #logoCol{
-    position: relative;
+    position: fixed;
     background-image: url("./logo_stuff/image_border.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center center;
-    margin-top: -3%;
-    margin-bottom: -3%;
-    z-index: 1;
+    margin-top: 25px;
+    z-index: 3;
+    height: 100px;
     text-align: center;
+    padding: 5px;
 }
 
 
@@ -114,8 +132,12 @@ body {
     z-index: 1;
 }
 
+#formContainer{
+    margin-right: -17%;
+}
+
 #linksContainerSubNav{
-    float: right;
+    
     display: block;
 }
 
@@ -133,6 +155,7 @@ body {
 #slideShowCol{
     position: relative;
     padding: 0;
+    margin-top: 85px;
 }
 
 .rowLinkCol{
@@ -141,7 +164,9 @@ body {
     margin-right: 1%;
     background-color: white;
     white-space: nowrap;
-    line-height: 2.5;
+    border: 2px solid lightslategrey;
+    border-radius: 5px;
+    padding: 1%;
 }
 
 #linksAndContentRow{
@@ -151,15 +176,22 @@ body {
 }
 
 .rowLinkWrap{
-        font-size: 1vw;
+        font-size: .8vw;
+        font-weight: bold;
     }
 
-.buttonRow{
-}
+.rowLinkCol:hover{
+        background-color: black;
+        color: white;
+    }
+.navItemRow:hover{
+    background-color: gray;
+}    
+    
 
 #buttonColumn{
     text-align: center;
-    position: relative;
+    height: 100%;
 }
 
 .arrowDownImage{
@@ -168,23 +200,24 @@ body {
 }
 
 #selectRepForm{
-    margin-right: 10%;
-    width: 36%;
-    margin-top: 29%;
-    float: right;
-    display: inline;
+    
 }
 
 #textColumn{
-    height: 450px;
-    overflow: visible;
-    margin-top: 2%;
+    padding: 0;
 }
 
 #welcomeParagraph{
     word-wrap: break-word;
+    text-align: center;
     height: auto;
     vertical-align: top;
+    font-size: 1.2vw;
+}
+
+#paragraphWelcomeMessage{
+    font-size: 3vw;
+    font-weight: bold;
 }
 
 .navbar-toggle.collapsed .icon-bar .navbar-dark {
@@ -193,16 +226,42 @@ body {
 
 
 #selectRepFormselector{
-  width: 60%;
-  height: 30px;
+  width: 35%;
 }
 
 #submitButtonGray{
-    height: 30px;
 }
 
+@media all and (min-width : 993px){
+    .rowLinkCol{
+        padding: 0;
+        
+    }
+    #phoneNumber{
+        font-size: 2rem;
+    }
+}
 
-@media all and (max-width: 1177px) { 
+@media all and (min-width : 1178px){
+    .rowLinkCol{
+        padding: 2%;
+        
+    }
+}
+
+@media all and (min-width : 1700px){
+    .rowLinkCol{
+        padding: 2%;  
+    }
+    #fixedTopNav{
+        height: 90px;
+    }
+    #subNavRow{
+        margin-top: 80px;
+    }
+}
+
+@media all and (max-width: 1177px) and (min-width: 993px) { 
     html {
         font-size: 1.6rem;
     }
@@ -217,12 +276,17 @@ body {
 
  } 
 
-@media all and (max-width: 991px) { 
+ 
+@media all and (max-width: 992px) { 
     html {
         font-size: .9rem;
     }
     .rowLinkCol{
+        height: 40px;
         
+    }
+    .buttonRow{
+        margin-bottom: 10%;
     }
  } 
 @media all and (max-width: 768px) { 
@@ -230,13 +294,37 @@ body {
         font-size: .8rem;
     }
     .navLink{
-        font-size: .8rem;
+        font-size: 1.2vw;
+    }
+    .rowLinkCol{
+        height: 35px;
     }
  } 
 @media all and (max-width: 575px) {
     html {
         font-size: .7rem;
     }
+    .rowLinkCol{
+        height: 30px;
+        border: 1px solid black;
+    }
     
+    #phoneNumber{
+        font-size: 1.5rem;
+    }
 }
- 
+
+@media all and (max-width: 460px) {
+    html {
+        font-size: .7rem;
+    }
+    .rowLinkCol{
+        height: 30px;
+    }
+    #logoCol{
+        height: 75px;    
+    }
+    .buttonRow{
+        margin-bottom: 40%;
+    }
+}
