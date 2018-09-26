@@ -1,0 +1,242 @@
+html {
+  font-size: .9rem;
+}
+
+body { 
+    background: url("./backgroundImage.jpg") repeat fixed center; 
+}
+
+/* 
+.whiteLink{
+    color: white;
+} */
+
+.testBorder{
+    border: 1px solid black;
+}
+
+.testBorderWhite{
+    border: 1px solid white;
+}
+
+#mainContainer{
+    
+}
+
+#fixedTopNav{
+    height: 50px;
+    background: url(./lighterBackground.jpg) repeat-x left top ; 
+    background-size: contain;
+    color: white;
+    position: relative;
+    margin-bottom: auto;
+}
+
+.navLink{
+   /* background: url(./darkerBackground.png) repeat-x left top ;  
+   background-size: 100%;
+   margin-right: 5px; */
+   font-family:  Arial, Helvetica, sans-serif;
+   font-size: 12px;
+   text-transform: uppercase;
+   white-space: nowrap;
+}
+
+#darkNav{
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background: none;
+}
+
+#navbarNav{
+   
+    height: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-brand{
+    background-color: inherit;
+    margin-top: 1%;
+}
+
+#collapseButton{
+    color: white;
+}
+
+
+#phoneNumber{
+    font-size: 2rem;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: bold;
+}
+
+
+
+#topNavLinkList{
+    background-color: #333333
+}
+
+#subNavRow{
+    height: 10%;
+    margin: 0;
+}
+
+#subNavLinksRow{
+    height: 100%;
+}
+
+#logoCol{
+    position: relative;
+    background-image: url("./logo_stuff/image_border.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    margin-top: -3%;
+    margin-bottom: -3%;
+    z-index: 1;
+    text-align: center;
+}
+
+
+
+#logoBorder{
+    position: relative;
+    width: 100%;
+    top: -26%;
+
+}
+
+#logoImage{
+    margin-top: 4%;
+    height: 60%;
+    width: 80%;
+    z-index: 1;
+}
+
+#linksContainerSubNav{
+    float: right;
+    display: block;
+}
+
+
+.subNavLink{
+    display: inline;
+}
+
+#slideShowRow{
+    height: auto;
+    overflow: hidden;
+    margin: 0;
+}
+
+#slideShowCol{
+    position: relative;
+    padding: 0;
+}
+
+.rowLinkCol{
+    text-align: center;
+    height: 50px;
+    margin-right: 1%;
+    background-color: white;
+    white-space: nowrap;
+    line-height: 2.5;
+}
+
+#linksAndContentRow{
+    height: 35%;
+    margin: 0;
+    margin-top: 2%;
+}
+
+.rowLinkWrap{
+        font-size: 1vw;
+    }
+
+.buttonRow{
+}
+
+#buttonColumn{
+    text-align: center;
+    position: relative;
+}
+
+.arrowDownImage{
+    max-width: 100%;
+    margin-top: 7px;
+}
+
+#selectRepForm{
+    margin-right: 10%;
+    width: 36%;
+    margin-top: 29%;
+    float: right;
+    display: inline;
+}
+
+#textColumn{
+    height: 450px;
+    overflow: visible;
+    margin-top: 2%;
+}
+
+#welcomeParagraph{
+    word-wrap: break-word;
+    height: auto;
+    vertical-align: top;
+}
+
+.navbar-toggle.collapsed .icon-bar .navbar-dark {
+  color : white !important;
+}
+
+
+#selectRepFormselector{
+  width: 60%;
+  height: 30px;
+}
+
+#submitButtonGray{
+    height: 30px;
+}
+
+
+@media all and (max-width: 1177px) { 
+    html {
+        font-size: 1.6rem;
+    }
+
+    #darkNav{
+        font-size: .3rem;
+    }
+
+    #phoneNumber {
+        font-size: 1rem;
+    }
+
+ } 
+
+@media all and (max-width: 991px) { 
+    html {
+        font-size: .9rem;
+    }
+    .rowLinkCol{
+        
+    }
+ } 
+@media all and (max-width: 768px) { 
+     html {
+        font-size: .8rem;
+    }
+    .navLink{
+        font-size: .8rem;
+    }
+ } 
+@media all and (max-width: 575px) {
+    html {
+        font-size: .7rem;
+    }
+    
+}
+ 
